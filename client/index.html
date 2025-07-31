@@ -1,16 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrations-form</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        
+  <div class="container">
+    <form id="registrationForm">
+      <h2>REGISTRATION FORM</h2>
+      <p>Fill out the form carefully for registration</p>
 
-    </div>
-    <script src="script.js"></script>
+      <div class="form-group">
+        <label for="firstName">Student Name</label>
+        <div class="name-row">
+          <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+          <option value="">Please select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Student E-mail</label>
+        <input type="email" id="email" name="email" placeholder="ex: myname@example.com" required />
+        <small>example@example.com</small>
+      </div>
+
+      <div class="form-group">
+        <label for="studentId">Student ID</label>
+        <input type="text" id="studentId" name="studentId" required />
+      </div>
+
+      <div class="form-group">
+        <label for="classList">List of Classes</label>
+        <select id="classList" name="classList" required>
+          <option value="">Please select</option>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="English">English</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
+   <div id="otpSection" style="display:none;">
+    <input type="text" id="otp" placeholder="Enter OTP" required />
+    <button onclick="verifyOtp()">Verify OTP</button>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
