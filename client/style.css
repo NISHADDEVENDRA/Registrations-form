@@ -1,19 +1,17 @@
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom, #ffa500, #ff7f50);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  scroll-behavior: smooth;
+  
 }
 
 .container {
-  background-color: #fff;
-  padding: 30px 40px;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  width: 400px;
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 form h2 {
@@ -27,9 +25,26 @@ form p {
   margin-bottom: 20px;
 }
 
-.form-group {
-  margin-bottom: 15px;
+.name-row{
+  display: flex;
+  gap: 10px;
+  width: 100%;
 }
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group.double{
+  display: flex;
+  gap: 20px;
+}
+
+.part{
+  width: 100%;
+}
+
+
 
 label {
   display: block;
@@ -42,17 +57,18 @@ label {
   gap: 10px;
 }
 
-input[type="text"],
-input[type="email"],
-select {
+input, select {
   width: 100%;
   padding: 10px;
-  border-radius: 6px;
   border: 1px solid #ccc;
-  font-size: 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 5px;
+  box-sizing: border-box;
 }
 
 small {
+  display: block;
   color: #777;
   font-size: 12px;
 }
@@ -70,4 +86,16 @@ button {
 
 button:hover {
   background-color: #218838;
+}
+
+#otpSection{
+  margin-top: 20px;
+}
+
+#otp{
+  margin-bottom: 10px;
+}
+
+#message{
+  font-weight: bold;
 }
