@@ -63,8 +63,8 @@
           </div>
 
           <div class="part">
-            <label for="classList">Higher Education:</label>
-            <select id="classList" name="classList" >
+            <label for="education">Higher Education:</label>
+            <select id="education" name="education" >
               <option value="">Please select</option>
               <option value="Degree">Degree</option>
               <option value="Diploma">Diploma/12th</option>
@@ -95,10 +95,10 @@
         <button type="submit">Submit</button>
       </form>
 
-      <div id="otpSection" style="display: none;">
+      <form id="otpSection" style="display: none;">
         <input type="text" id="otp" placeholder="Enter OTP" />
-        <button onclick="verifyOtp()">Verify OTP</button>
-      </div>
+        <button type="submit">Verify OTP</button>
+      </form>
 
       <p id="message"></p>
 
