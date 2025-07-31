@@ -38,7 +38,7 @@ exports.register = async (req, res) => {
       from: 'devendranishad981@gmail.com',
       to: email,
       subject: 'Email Verification OTP',
-      text: `Your OTP is ${otp}`
+      text: `Hii ${firstName} Thank you for registering. Have a great Time,  Your OTP is => ${otp}. Don't share it with anyone.`
     });
 
     res.status(200).json({ message: 'OTP sent to your email' });
